@@ -89,6 +89,7 @@ export default function SelectRecipients({
           <Input
             size="lg"
             variant="outline"
+            id="search-variant"
             name="search-variant"
             placeholder="test@timescale.com"
             errorBorderColor="red.300"
