@@ -1,29 +1,36 @@
 [
   {
-  "email": "ann@timescale.com",
-  "isSelected": false
+    "id": 1,
+    "email": "ann@timescale.com",
+    "isSelected": false
   },
   {
+    "id": 2,
     "email": "bob@timescale.com",
     "isSelected": false
   },
   {
+    "id": 3,
     "email": "brian@qwerty.com",
     "isSelected": true
   },
   {
+    "id": 4,
     "email": "james@qwerty.com",
     "isSelected": false
   },
   {
+    "id": 5,
     "email": "jane@awesome.com",
     "isSelected": false
   },
   {
+    "id": 6,
     "email": "kate@qwerty.com",
     "isSelected": true
   },
   {
+    "id": 7,
     "email": "mike@hello.com",
     "isSelected": true
   }

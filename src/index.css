@@ -1,13 +1,74 @@
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: #f7fafc;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+main {
+  display: flex;
+  align-content: center;
+  padding: 2rem;
+  background-color: #f7fafc;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container__element {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 65vh;
+}
+
+.email-action-button {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.chakra-accordion__item {
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.chakra-accordion__item > .domain-button {
+  position: absolute;
+  z-index: 99;
+  right: 20px;
+  margin-top: 8px;
+}
+
+/* mobile / tablet */
+@media only screen and (max-width: 760px) {
+  main {
+    padding: 1rem;
+    align-content: start;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container__element {
+    min-height: 30vh;
+    width: 100%;
+    height: auto;
+  }
 }
