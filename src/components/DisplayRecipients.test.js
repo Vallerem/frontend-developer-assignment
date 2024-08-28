@@ -3,7 +3,7 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import DisplayRecipients from "./DisplayRecipients";
 
-jest.mock("./shared/EmailRow", () => (props: any) => (
+jest.mock("./shared/EmailRow", () => (props) => (
   <div data-testid="email-row" onClick={props.onClick}>
     {props.title}
   </div>

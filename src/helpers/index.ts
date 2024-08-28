@@ -46,7 +46,7 @@ export function filterDomainsByEmail(
   return data
     .map((domain) => {
       const matchingEmails = domain.emails.filter((email) =>
-        email.emailName.includes(searchInput)
+        email.emailName.toLowerCase().includes(searchInput.toLowerCase())
       );
 
       if (matchingEmails.length > 0) {
